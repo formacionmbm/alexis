@@ -1,5 +1,5 @@
 # 42 Madrid Cursus | avenegas
-My Personal Repository for the various projects from 42. Born2Code! :computer: :grin:
+My Personal Repository for the various projects from POO :computer: :grin:
 
 ## Project List
 
