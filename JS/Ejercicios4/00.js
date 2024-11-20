@@ -81,5 +81,91 @@ let suma2 = arrayNums.reduce((a, b) => a + b, 0);
 console.log(suma2);
 
 
-// 12.-
+// 12.-Crea una función que concatene dos cadenas de texto.
 
+function concatenar(cadena1, cadena2){
+    return cadena1 + " " + cadena2;
+}
+
+console.log(concatenar("Hola", "Mundo"));
+
+
+// 13.- . Utiliza un bucle para imprimir los números del 10 al 1 en orden descendente.
+
+for (let i = 10; i >= 1; i--){
+
+    console.log(i);
+}
+
+// 14.- . Declara un objeto coche con propiedades marca, modelo y año, e imprímelo
+
+let coche = {
+    marca: "Toyota",
+    modelo: "Corolla",
+    año: 2020
+}
+
+console.log(coche);
+
+// 15 .- Escribe una función que determine si una palabra es palíndroma.
+
+function palindroma(palabra){
+    let palabraInvertida = palabra.split("").reverse().join("");
+    if (palabra == palabraInvertida){
+        return "Es palindroma";
+    } else {
+        return "No es palindroma";
+    }
+}
+
+console.log(palindroma("reconocer"));
+
+// 16.- . Declara una variable y asigna un número. Luego, imprime "Negativo" si el número es menor que 0.
+
+let numero = -5;
+if (numero < 0){
+    console.log("Negativo");
+}
+
+// 17.-  Crea una función que calcule el área de un triángulo con base y altura.
+
+function areaTriangulo(base, altura){
+    return (base * altura) / 2;
+}
+
+console.log(areaTriangulo(5, 10));
+
+// 18- Utiliza un bucle para imprimir los números impares del 1 al 15.
+
+for (let i = 1; i <= 15; i++){
+    if (i % 2 != 0){
+        console.log(i);
+    }
+}
+
+// 19 .- Declara un arreglo de objetos (cada objeto representa una persona con nombre y edad) e imprímelo
+
+let personas = [
+    {
+        nombre: "Juan",
+        edad: 20
+    },
+    {
+        nombre: "Pedro",
+        edad: 25
+    },
+    {
+        nombre: "Ana",
+        edad: 30
+    }
+]
+
+console.log(personas);
+
+// 20.- Escribe una función que devuelva el máximo de tres números.
+
+function maximo(num1, num2, num3){
+    return Math.max(num1, num2, num3);
+}
+
+console.log(maximo(5, 10, 15));
