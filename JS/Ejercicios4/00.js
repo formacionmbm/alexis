@@ -165,7 +165,13 @@ console.log(personas);
 // 20.- Escribe una función que devuelva el máximo de tres números.
 
 function maximo(num1, num2, num3){
-    return Math.max(num1, num2, num3);
+
+    for (let i = 0; i < arguments.length; i++){
+        if (arguments[i] > num1){
+            num1 = arguments[i];
+        }
+    }
+    return num1;
 }
 
 console.log(maximo(5, 10, 15));
