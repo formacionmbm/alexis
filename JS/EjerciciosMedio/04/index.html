@@ -1,0 +1,13 @@
+<select id="opciones" multiple>
+    <option value="1">Opción 1</option>
+    <option value="2">Opción 2</option>
+    <option value="3">Opción 3</option>
+   </select>
+<button onclick="mostrarSeleccion()">Mostrar Selección</button>
+
+<script>
+    function mostrarSeleccion(){
+        const options = document.querySelectorAll("option");
+        console.log(options[0].selected)
+    }
+</script>
