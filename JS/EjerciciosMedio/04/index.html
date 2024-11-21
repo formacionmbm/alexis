@@ -8,6 +8,9 @@
 <script>
     function mostrarSeleccion(){
         const options = document.querySelectorAll("option");
-        console.log(options[0].selected)
+        if(options[0].selected) alert("Opción 1 seleccionada")
+        else if(options[1].selected) alert("Opción 2 seleccionada")
+        else if(options[2].selected) alert("Opción 3 seleccionada")
+
     }
 </script>
