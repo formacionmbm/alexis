@@ -9,17 +9,18 @@
        <script>
         function crearTabla(e, fil, col){
             console.log(fil, col)
-            contenedorTabla.innerHTML = `
-            <table>
-                `for`
+            contenedorTabla.innerHTML = "<table border='1' id='newTable'>"
+              e.preventDefault(); 
 
-
-            </table>
-
-            `
-
-            e.preventDefault(); 
-        }
+                if((fil || col) || (fill > 0 && col > 0)){
+                    for(let i = 0; i < fil; i++){
+                        let generate = newTable.insertRow()
+                        for(let j = 0; j < col; j++){
+                            generate.insertCell(j).innerHTML = "F" + i + "C" + j
+                        }
+                    }
+                }
+            }
        </script>
        
 </body>
